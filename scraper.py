@@ -14,7 +14,7 @@ class Scraper:
         self._image_map = {} # map of image URL -> image filename
 
         # make the "data/images" directory, if necessary
-        os.makedirs("images", mode=0o777, exist_ok=True)
+        os.makedirs("data/images", mode=0o777, exist_ok=True)
 
     def read_pages(self):
         # there are always 10 pages
